@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32811.315
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalcApi", "CalcApi\CalcApi.csproj", "{1D0EE53B-2C6E-48F1-93E2-F4158D980BE3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{A5E4B431-9165-41C9-AA73-D4A856CE21D3}"
+	ProjectSection(SolutionItems) = preProject
+		CalcPage.html = CalcPage.html
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1D0EE53B-2C6E-48F1-93E2-F4158D980BE3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1D0EE53B-2C6E-48F1-93E2-F4158D980BE3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1D0EE53B-2C6E-48F1-93E2-F4158D980BE3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1D0EE53B-2C6E-48F1-93E2-F4158D980BE3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5889D60B-0559-45FB-847F-C7A6B570FFA4}
+	EndGlobalSection
+EndGlobal

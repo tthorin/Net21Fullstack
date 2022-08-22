@@ -1,0 +1,37 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    
+    <h1>Calc Page!</h1>
+    <input id="numberOne" type="number" />
+    <select id="calc">
+        <option value="plus">+</option>
+        <option value="minus">-</option>
+        <option value="divide">/</option>
+        <option value="multiply">*</option>
+    </select>
+    <input id="numberTwo" type="number" />
+    <button id="getResult" onclick="GetResult()">Calc!</button>
+    <h2 id="displayResult">Hello</h2>
+
+    <script>
+       async function  GetResult() {
+            const num1 = document.getElementById("numberOne").value;
+            const num2 = document.getElementById("numberTwo").value;
+            const operator = document.getElementById("calc").value;
+            const query = "?calc="+operator+"&numberOne="+num1+"&numberTwo="+num2;
+            let apiQuery = "https://localhost:7027/calc"+query
+            console.log(apiQuery)
+            let result = await fetch("https://localhost:7027/calc"+query).then(response=>response.json())
+            console.log(result)
+            document.getElementById("displayResult").innerHTML= "Result: "+result;
+        }
+        
+    </script>
+</body>
+</html>
