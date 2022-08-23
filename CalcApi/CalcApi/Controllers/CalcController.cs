@@ -2,7 +2,6 @@
 
 namespace CalcApi.Controllers;
 using Microsoft.AspNetCore.Mvc;
-using System.Linq.Expressions;
 
 [Route("[controller]")]
 [ApiController]
@@ -29,11 +28,9 @@ public class CalcController : ControllerBase
                 }
             }
             return BadRequest("Wrong parameters, first input +, -, / or * and then two numbers.");
-
         }
         catch (Exception e)
         {
-
             return BadRequest("Wrong parameters, first input +, -, / or * and then two numbers.");
         }
     }
